@@ -24,31 +24,6 @@ import Dot from "./components/Dot";
 import {toggleSidebar, useLayoutDispatch, useLayoutState,} from "../../context/LayoutContext";
 
 const structure = [
-  { id: 0, label: "Dashboard", link: "/app/dashboard", icon: <HomeIcon /> },
-  {
-    id: 1,
-    label: "Typography",
-    link: "/app/typography",
-    icon: <TypographyIcon />,
-  },
-  { id: 2, label: "Tables", link: "/app/tables", icon: <TableIcon /> },
-  {
-    id: 3,
-    label: "Notifications",
-    link: "/app/notifications",
-    icon: <NotificationsIcon />,
-  },
-  {
-    id: 4,
-    label: "UI Elements",
-    link: "/app/ui",
-    icon: <UIElementsIcon />,
-    children: [
-      { label: "Icons", link: "/app/ui/icons" },
-      { label: "Charts", link: "/app/ui/charts" },
-      { label: "Maps", link: "/app/ui/maps" },
-    ],
-  },
   {
     id: 5,
     label: "WebMonitoring",
@@ -61,38 +36,13 @@ const structure = [
   },
   {
     id: 6,
-    label: "WebMonitoring Statistics",
+    label: "Statistics",
     link: "/app/ui",
-    icon: <WebMonitoringIcon/>,
+    icon: <TypographyIcon/>,
     children: [
       { label: "Resource", link: "/app/ui/resourcemanagerstatistics" },
       { label: "Website", link: "/app/ui/websitemanagerstatistics" },
     ],
-  },
-  { id: 7, type: "divider" },
-  { id: 8, type: "title", label: "HELP" },
-  { id: 9, label: "Library", link: "", icon: <LibraryIcon /> },
-  { id: 10, label: "Support", link: "", icon: <SupportIcon /> },
-  { id: 11, label: "FAQ", link: "", icon: <FAQIcon /> },
-  { id: 12, type: "divider" },
-  { id: 13, type: "title", label: "PROJECTS" },
-  {
-    id: 14,
-    label: "My recent",
-    link: "",
-    icon: <Dot size="large" color="warning" />,
-  },
-  {
-    id: 15,
-    label: "Starred",
-    link: "",
-    icon: <Dot size="large" color="primary" />,
-  },
-  {
-    id: 16,
-    label: "Background",
-    link: "",
-    icon: <Dot size="large" color="secondary" />,
   },
 ];
 

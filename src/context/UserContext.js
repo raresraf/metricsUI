@@ -78,7 +78,7 @@ async function loginUser(dispatch, login, password, history, setIsLoading, setEr
       setError(null);
       setIsLoading(false);
 
-      history.push("/app/dashboard");
+      history.push("/app/ui/resourcemanager");
     }, 2000);
   } else {
     dispatch({type: "LOGIN_FAILURE"});
